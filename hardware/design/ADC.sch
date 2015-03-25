@@ -1,0 +1,215 @@
+EESchema Schematic File Version 2
+LIBS:BoardA3P
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 7 6
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MAX117 U7
+U 1 1 550E17E9
+P 5900 3800
+F 0 "U7" H 5900 3700 50  0000 C CNN
+F 1 "MAX117" H 5900 3900 50  0000 C CNN
+F 2 "SMD_Packages:SSOP28" H 5900 3800 50  0001 C CNN
+F 3 "DOCUMENTATION" H 5900 3800 50  0001 C CNN
+	1    5900 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR035
+U 1 1 550E182E
+P 5900 1950
+F 0 "#PWR035" H 5900 1910 30  0001 C CNN
+F 1 "+3.3V" H 5900 2060 30  0000 C CNN
+F 2 "" H 5900 1950 60  0000 C CNN
+F 3 "" H 5900 1950 60  0000 C CNN
+	1    5900 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 1950 5900 2500
+$Comp
+L Csmall C40
+U 1 1 550E1846
+P 6150 2200
+F 0 "C40" H 6175 2250 30  0000 L CNN
+F 1 "100n" H 6175 2150 30  0000 L CNN
+F 2 "Capacitors_SMD:c_0805" H 6150 2200 60  0001 C CNN
+F 3 "" H 6150 2200 60  0000 C CNN
+	1    6150 2200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6050 2200 5900 2200
+Connection ~ 5900 2200
+$Comp
+L GND #PWR036
+U 1 1 550E18D0
+P 6450 2200
+F 0 "#PWR036" H 6450 2200 30  0001 C CNN
+F 1 "GND" H 6450 2130 30  0001 C CNN
+F 2 "" H 6450 2200 60  0000 C CNN
+F 3 "" H 6450 2200 60  0000 C CNN
+	1    6450 2200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6450 2200 6250 2200
+$Comp
+L GND #PWR037
+U 1 1 550E18F5
+P 5900 5250
+F 0 "#PWR037" H 5900 5250 30  0001 C CNN
+F 1 "GND" H 5900 5180 30  0001 C CNN
+F 2 "" H 5900 5250 60  0000 C CNN
+F 3 "" H 5900 5250 60  0000 C CNN
+	1    5900 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 5250 5900 5100
+Wire Wire Line
+	6700 3300 7000 3300
+Wire Wire Line
+	6700 3400 7000 3400
+Wire Wire Line
+	6700 3500 7000 3500
+Wire Wire Line
+	6700 3600 7000 3600
+Wire Wire Line
+	6700 3700 7000 3700
+Wire Wire Line
+	6700 3800 7000 3800
+Wire Wire Line
+	6700 3900 7000 3900
+Wire Wire Line
+	6700 4000 7000 4000
+Text Label 6800 4000 0    60   ~ 0
+D0
+Text Label 6800 3900 0    60   ~ 0
+D1
+Text Label 6800 3800 0    60   ~ 0
+D2
+Text Label 6800 3700 0    60   ~ 0
+D3
+Text Label 6800 3600 0    60   ~ 0
+D4
+Text Label 6800 3500 0    60   ~ 0
+D5
+Text Label 6800 3400 0    60   ~ 0
+D6
+Text Label 6800 3300 0    60   ~ 0
+D7
+Text Label 6800 2950 0    60   ~ 0
+A0
+Text Label 6800 3050 0    60   ~ 0
+A1
+Text Label 6800 3150 0    60   ~ 0
+A2
+Wire Wire Line
+	6700 2950 7000 2950
+Wire Wire Line
+	6700 3050 7000 3050
+Wire Wire Line
+	6700 3150 7000 3150
+Entry Wire Line
+	7000 2950 7100 3050
+Entry Wire Line
+	7000 3050 7100 3150
+Entry Wire Line
+	7000 3150 7100 3250
+Entry Wire Line
+	7000 3300 7100 3400
+Entry Wire Line
+	7000 3400 7100 3500
+Entry Wire Line
+	7000 3500 7100 3600
+Entry Wire Line
+	7000 3600 7100 3700
+Entry Wire Line
+	7000 3700 7100 3800
+Entry Wire Line
+	7000 3800 7100 3900
+Entry Wire Line
+	7000 3900 7100 4000
+Entry Wire Line
+	7000 4000 7100 4100
+Wire Bus Line
+	7100 3050 7100 3250
+Wire Bus Line
+	7100 3250 8350 3250
+Wire Bus Line
+	7100 3400 7100 4100
+Wire Bus Line
+	7100 4100 8350 4100
+Text Label 7600 3250 0    60   ~ 0
+A[0...2]
+Text Label 7600 4100 0    60   ~ 0
+D[0...7]
+Text HLabel 8350 4100 2    60   Output ~ 0
+ADC_DATA[0...7]
+Text HLabel 8350 3250 2    60   Input ~ 0
+ADC_ADDR[0...2]
+$Comp
+L +3.3V #PWR038
+U 1 1 550E2C25
+P 6850 4150
+F 0 "#PWR038" H 6850 4110 30  0001 C CNN
+F 1 "+3.3V" H 6850 4260 30  0000 C CNN
+F 2 "" H 6850 4150 60  0000 C CNN
+F 3 "" H 6850 4150 60  0000 C CNN
+	1    6850 4150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6850 4150 6700 4150
+Wire Wire Line
+	6700 4450 7600 4450
+Wire Wire Line
+	7150 4450 7150 4700
+Wire Wire Line
+	7150 4700 6700 4700
+Connection ~ 7150 4450
+Text HLabel 7600 4450 2    60   Input ~ 0
+ADC_nSTART
+Wire Wire Line
+	6700 4350 7600 4350
+Text HLabel 7600 4350 2    60   Output ~ 0
+ADC_nEOC
+NoConn ~ 6700 4250
+Wire Wire Line
+	6700 4600 7000 4600
+Wire Wire Line
+	7000 4600 7000 5200
+Wire Wire Line
+	7000 5200 5900 5200
+Connection ~ 5900 5200
+Text HLabel 5100 3750 0    60   Input ~ 0
+AIN0
+Text HLabel 5100 3650 0    60   Input ~ 0
+AIN1
+Text HLabel 5100 3550 0    60   Input ~ 0
+AIN2
+Text HLabel 5100 3450 0    60   Input ~ 0
+AIN3
+Text HLabel 5100 3350 0    60   Input ~ 0
+AIN4
+Text HLabel 5100 3250 0    60   Input ~ 0
+AIN5
+Text HLabel 5100 3150 0    60   Input ~ 0
+AIN6
+Text HLabel 5100 4150 0    60   Input ~ 0
+REF+
+Text HLabel 5100 4250 0    60   Input ~ 0
+REF-
+$EndSCHEMATC
