@@ -1,10 +1,10 @@
-Cmp-Mod V01 Created by Cvpcb 0.201503090816+5484~22~ubuntu14.04.1-product   date = dom 22 mar 2015 22:16:01 ART
+Cmp-Mod V01 Created by Cvpcb 0.201503090816+5484~22~ubuntu14.04.1-product   date = jue 02 abr 2015 12:04:43 ART
 
 BeginCmp
 TimeStamp = /5508B6AB/5509758B;
 Reference = C1;
 ValeurCmp = 33u;
-IdModule  = Capacitors_SMD:c_0805;
+IdModule  = Capacitors_SMD:c_1206;
 EndCmp
 
 BeginCmp
@@ -267,9 +267,23 @@ IdModule  = Capacitors_SMD:c_0805;
 EndCmp
 
 BeginCmp
+TimeStamp = /550E110A/551463E1;
+Reference = C39;
+ValeurCmp = 1u;
+IdModule  = Capacitors_SMD:c_0805;
+EndCmp
+
+BeginCmp
 TimeStamp = /550E110A/550E1846;
 Reference = C40;
 ValeurCmp = 100n;
+IdModule  = Capacitors_SMD:c_0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /550E110A/55146690;
+Reference = C41;
+ValeurCmp = 1u;
 IdModule  = Capacitors_SMD:c_0805;
 EndCmp
 
@@ -302,10 +316,24 @@ IdModule  = Diodes_SMD:Diode-SMA_Standard;
 EndCmp
 
 BeginCmp
+TimeStamp = /550A65B0/5514743C;
+Reference = D4;
+ValeurCmp = LED;
+IdModule  = LEDs:LED-0805;
+EndCmp
+
+BeginCmp
 TimeStamp = /5508B6AB/5508B09E;
 Reference = IC1;
 ValeurCmp = A3P250-VQG100;
 IdModule  = SMD_Packages:VQFP100;
+EndCmp
+
+BeginCmp
+TimeStamp = /550E110A/551466E2;
+Reference = L1;
+ValeurCmp = 100uH;
+IdModule  = Inductors_NEOSID:Neosid_Inductor_SM1206;
 EndCmp
 
 BeginCmp
@@ -334,6 +362,13 @@ TimeStamp = /550FC2F0;
 Reference = P4;
 ValeurCmp = CONN_8;
 IdModule  = Connect:SIL-8;
+EndCmp
+
+BeginCmp
+TimeStamp = /5508B6AB/551D6D05;
+Reference = P5;
+ValeurCmp = CONN_1;
+IdModule  = Connect:SIL-1;
 EndCmp
 
 BeginCmp
@@ -368,6 +403,20 @@ BeginCmp
 TimeStamp = /550A65B0/550A9421;
 Reference = R5;
 ValeurCmp = 10k;
+IdModule  = Resistors_SMD:Resistor_SMD0805_ReflowWave;
+EndCmp
+
+BeginCmp
+TimeStamp = /550E110A/55146AE2;
+Reference = R6;
+ValeurCmp = 0R;
+IdModule  = Resistors_SMD:Resistor_SMD0805_ReflowWave;
+EndCmp
+
+BeginCmp
+TimeStamp = /550A65B0/551474ED;
+Reference = R8;
+ValeurCmp = 470R;
 IdModule  = Resistors_SMD:Resistor_SMD0805_ReflowWave;
 EndCmp
 
@@ -416,7 +465,7 @@ EndCmp
 BeginCmp
 TimeStamp = /5508B6AB/550F736A;
 Reference = U6;
-ValeurCmp = OSC-4pin;
+ValeurCmp = 12MHz;
 IdModule  = local:OSC_2x2p5;
 EndCmp
 
